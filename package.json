@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server",
     "devStart": "nodemon server.js"
   },
   "author": "Surya Palla",

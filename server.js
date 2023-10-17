@@ -6,6 +6,8 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
+  console.log(req.socket.remoteAddress);
+  console.log(req.headers["x-forwarded-for"]);
   res.render("index");
 });
 

@@ -30,6 +30,11 @@
       rel="stylesheet"
       href="icon-fonts/essential-regular-fonts/essential-icons.css"
     />
+    <style>
+      #hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body class="diag">
     <!-- LOADER -->
@@ -47,8 +52,10 @@
           <ul class="nav-menu">
             <li><a href="#home" class="smoothScroll">Home</a></li>
             <li><a href="#about" class="smoothScroll">About</a></li>
-            <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-            <li><a href="#blog" class="smoothScroll">Blog</a></li>
+            <li id="hidden">
+              <a href="#portfolio" class="smoothScroll">Portfolio</a>
+            </li>
+            <li id="hidden"><a href="#blog" class="smoothScroll">Blog</a></li>
             <li><a href="#contact" class="smoothScroll">Contact</a></li>
           </ul>
         </div>
@@ -124,24 +131,23 @@
           >
             <div class="section-title dleft bottom_30">
               <br />
-              <h2>ABOUT US</h2>
+              <h2>ABOUT ME</h2>
             </div>
             <p>
-              For instance, whenever I go back to the guest house during the
-              <b>morning</b> to copy out the contract,
-              <b>these gentlemen</b> are always still sitting there eating their
-              breakfasts. I ought to just try that witht my boss; I'd get kicked
-              out on the spot.
-
+              Results-driven Associate Professional Software Engineer with 2
+              years of hands-on experience as a Hybrid Team Member in
+              <b>Backend Development</b> and <b>Quality Assurance</b>.
               <br /><br />
-              But who knows, maybe that would be the best thing for me. He'd
-              fall right off his desk! And it's a funny sort of business to be
-              sitting up there at your desk, talking down at your subordinates.
-              I ought to just try that witht my boss; I'd get kicked out on the
-              spot. But who knows, maybe that would be the best thing for me.
-              He'd fall right off his desk! And it's a funny sort of business to
-              be sitting up there at your desk, talking down at your
-              subordinates.
+              Proficient in a diverse range of programming languages including
+              C, C++, MEARN Stack and adept in Postman API Testing. Prior to
+              joining DXC, I honed my skills as a Freelancer Web and Android
+              Backend Developer, successfully delivering 7 real-time
+              applications using technologies like Django, Cordova, and
+              CodeIgniter. With a passion for innovation and a commitment to
+              producing high-quality software solutions, I bring a dynamic blend
+              of technical expertise and collaborative prowess to every project.
+              Looking forward to contributing my skills and enthusiasm to a
+              forward-thinking team.
             </p>
           </div>
 
@@ -155,88 +161,7 @@
             data-items-tablet="2"
             data-items-tablet-small="1"
             data-wow-delay="0.4s"
-          >
-            <!-- an area -->
-            <div class="area col-md-12 item">
-              <div class="icon">
-                <i data-icon="1" class="icon"></i>
-              </div>
-              <div class="text">
-                <h6>Web Design</h6>
-                <p>
-                  Cloud agency follows the latest design standards to deliver a
-                  beautiful and functional digital product.
-                </p>
-              </div>
-            </div>
-            <!-- an area -->
-            <div class="area col-md-12 item">
-              <div class="icon">
-                <i data-icon="!" class="icon"></i>
-              </div>
-              <div class="text">
-                <h6>Branding Identity</h6>
-                <p>
-                  We will make you a brand that is catchy and leaves a trace.
-                  Your target group will never forget you.
-                </p>
-              </div>
-            </div>
-            <!-- an area -->
-            <div class="area col-md-12 item">
-              <div class="icon">
-                <i data-icon="#" class="icon"></i>
-              </div>
-              <div class="text">
-                <h6>Illustrator</h6>
-                <p>
-                  I ought to just try that with my boss; I'd get kicked out on
-                  the spot. But who knows, maybe that would be the best thing
-                  me.
-                </p>
-              </div>
-            </div>
-            <!-- an area -->
-            <div class="area col-md-12 item">
-              <div class="icon">
-                <i data-icon="1" class="icon"></i>
-              </div>
-              <div class="text">
-                <h6>Web Design</h6>
-                <p>
-                  Cloud agency follows the latest design standards to deliver a
-                  beautiful and functional digital product.
-                </p>
-              </div>
-            </div>
-            <!-- an area -->
-            <div class="area col-md-12 item">
-              <div class="icon">
-                <i data-icon="!" class="icon"></i>
-              </div>
-              <div class="text">
-                <h6>Branding Identity</h6>
-                <p>
-                  We will make you a brand that is catchy and leaves a trace.
-                  Your target group will never forget you.
-                </p>
-              </div>
-            </div>
-            <!-- an area -->
-            <div class="area col-md-12 item">
-              <div class="icon">
-                <i data-icon="#" class="icon"></i>
-              </div>
-              <div class="text">
-                <h6>Illustrator</h6>
-                <p>
-                  I ought to just try that with my boss; I'd get kicked out on
-                  the spot. But who knows, maybe that would be the best thing
-                  me.
-                </p>
-              </div>
-            </div>
-          </div>
+          ></div>
         </div>
         <svg
           class="diagonal-gray"
@@ -251,7 +176,7 @@
     </section>
 
     <!--PORTFOLIO-->
-    <section class="portfolio" id="portfolio">
+    <section style="display: none" class="portfolio" id="portfolio">
       <div class="container">
         <div class="section-title dleft top_120 bottom_90">
           <h2>PORTFOLIO</h2>
@@ -393,7 +318,7 @@
     </section>
 
     <!-- BLOG -->
-    <section class="blog" id="blog">
+    <section style="display: none" class="blog" id="blog">
       <div class="container-fluid dgray-bg padbot_200">
         <div class="container">
           <div class="section-title dright top_120 bottom_45">
@@ -485,7 +410,7 @@
             <li><br />hello@suryapalla.com</li>
             <li>+91 77026 60343</li>
           </ul>
-          <div class="social-icons top_60 row">
+          <!-- <div class="social-icons top_60 row">
             <a class="fb" href="#"
               ><i class="fa fa-facebook" aria-hidden="true"></i
             ></a>
@@ -501,7 +426,7 @@
             <a class="dr" href="#"
               ><i class="fa fa-dribbble" aria-hidden="true"></i
             ></a>
-          </div>
+          </div> -->
         </div>
         <div
           class="col-md-7 col-md-offset-2 form top_30 bottom_90 wow fadeInUp"
@@ -559,12 +484,17 @@
     <footer>
       <div class="container">
         <div class="social">
-          <a href="#">facebook </a>
-          <a href="#">twitter </a>
-          <a href="#">instagram </a>
-          <a href="#">google plus </a>
-          <a href="#">behance </a>
-          <a href="#">dribbble </a>
+          <a href="https://www.facebook.com/surya.palla.5/" target="_blank"
+            >facebook
+          </a>
+          <a href="https://twitter.com/_suryapalla" target="_blank">twitter </a>
+          <a href="https://www.instagram.com/surya.palla/" target="_blank"
+            >instagram
+          </a>
+          <!-- <a href="#">google plus </a> -->
+          <a href="https://www.linkedin.com/in/suryapalla/" target="_blank"
+            >linkedin
+          </a>
         </div>
         <p>
           Copyright © 2018 Berlin, All rights Reserved. <br />
